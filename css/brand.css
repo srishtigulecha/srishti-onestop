@@ -1,0 +1,46 @@
+.imgcontainer{
+  text-align: center;
+}
+.imgcontainer img{
+    height: 400px;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0px rgba(0,0,0,0.4);
+}
+section #headbrandname{
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+    font-family:"Farro";
+    font-size: 35px;
+    text-shadow: 0 0 3px #FF0000;
+}
+#branditems .box{
+  padding: 20px 0px;
+}
+section #cname{
+  font-size: 20px;
+  margin:10px 20px;
+  font-weight:550;
+  border-bottom: 1px solid black;
+}
+section span{
+  margin: 5px;
+  font-size: 15px;
+}
+.prod{
+  position: relative;
+}
+@media (max-width:800px){
+  .imgcontainer img{
+    width: 90%;
+    height: 300px;
+  }
+}
+@media (max-width:400px){
+  .imgcontainer img{
+    width: 95%;
+    height: 250px;
+  }
+}

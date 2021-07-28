@@ -1,0 +1,119 @@
+#order_table{
+    width:75%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 20px;
+}
+#order_table td, #order_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+#order_table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#order_table tr:nth-child(odd) {
+    background-color:white;
+}
+#order_table tr:hover {
+    background-color: #ddd;
+} 
+#order_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+#addbar{
+    margin: 20px;
+}
+#del_det{
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:auto;
+}
+#addbar #head{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+#del_det .box{
+    width: 300px ;
+}
+#del_det .box input,textarea{
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline:none;
+    border:1px solid black;
+    padding:2px 10px;
+    font-size: 14px;
+}
+#del_det .box label{
+    color: rgb(2, 2, 51);
+    font-weight: 550;
+}
+#del_det .box input{
+    height: 30px;
+}
+#del_det .box textarea{
+    height: 50px;
+    resize: none;
+    margin-bottom: -10px;
+}
+#order_table tr:last-child{
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+}
+#del_det .box p{
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: none;
+}
+#place{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+#place button{
+    width:120px;
+    height: 40px;
+    color: #ffffff;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;   
+    margin: 10px 20px;
+}
+#edit_btn{
+    background-color:  rgb(121, 176, 238);
+}
+#edit_btn:hover{
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+    color: rgb(79, 151, 233);
+    border: 2px solid rgb(121, 176, 238);
+}
+#confirm_btn{
+    background-color: rgb(10, 214, 10);
+}
+#confirm_btn:hover{
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+    color: rgb(10, 214, 10);
+    border: 2px solid rgb(10, 214, 10);
+}
+@media (max-width:502px){
+    #order_table{
+        width:95%;
+    }
+}

@@ -1,0 +1,236 @@
+body{
+    font: 15px/1.5 Arial,Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color:azure;
+    overflow-x: hidden;
+}
+.container{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background:rgb(26, 101, 104);
+    color:#ffffff;
+    padding-top: 20px;
+    border-bottom: 3px solid rgb(158, 18, 18);
+    min-height: 70px;
+    font-size: 20px;
+}
+header #nav1 a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+header #brandlogo{
+    float: left;
+}
+header #brandlogo h1{
+    margin: 0;
+}
+
+.top_container{
+    box-sizing: border-box;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+	flex-wrap: wrap;
+    position: relative; /*this stmt added for alertmsg*/
+}
+.top_container input{
+    flex-shrink: 10;
+}
+.top_container h1{
+	padding: 0;
+    margin: 0;
+}
+.top_container #brand,.top_container #search_form{
+	display:inline-block;
+    position: relative;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+header #nav1 a:hover{
+    border: 1px solid white;
+    padding: 5px;
+}
+#search_form input{
+   padding: 4px;
+    height: 25px;
+    width: 400px;
+}
+#search_form input:focus{
+    border: 3px solid rgb(155, 230, 216);
+    outline: none;
+    background-color: rgb(225, 243, 243);
+    border-radius: 5px;
+}
+button{
+    cursor: pointer;
+}
+.button1{
+    height: 38px;
+    background: orangered;
+    color:#ffffff;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button1:hover{
+    font-weight: bold;
+    box-shadow:0px 8px 16px 0px rgba(241, 238, 238, 0.2);
+}
+
+header #nav1 li{
+    display: inline;
+    padding: 0 10px 0 10px;
+
+}
+.container1{
+    background-color: rgb(18, 59, 59);
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(18, 59, 59);
+    margin: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a {
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+    font-weight: bold;
+    padding-left: 20px;
+    transition-duration: 0.3s;
+}
+.dropdown-content a:hover::before{
+    content: '>  ';
+   
+} 
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.dropdown:hover .dropbtn {
+    background-color: rgb(25, 83, 83);
+}
+@media (max-width:502px) {
+    #search_form input{
+        width: 300px;
+    }
+    .dropdown{
+        display: block;
+    }
+    .dropbtn{
+        margin: 0;
+        padding: 10px;
+    }
+    .dropdown-content{
+        position:relative;
+        margin-right: 10px;
+    }
+}
+@media (max-width:390px){
+    #search_form input{
+        width:200px;
+    }
+}
+
+footer{
+    padding: 20px;
+    margin-top: 30px;
+    color: #ffffff;
+    background-color: rgb(25, 83, 83);
+    
+}
+.footcontent{
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.address,.abt,.custser{
+    display:inline-block;
+    position: relative;
+    text-align: left;
+    padding-left: 20px;
+    margin: auto;
+    margin-top: 0px;
+}
+.custser,.abt{
+    width: 125px;
+}
+.address{
+    width: 235px;
+}
+.abt a{
+    display: block;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+footer a:hover{
+    color: #c1e2eb;
+    font-weight: bold;
+}
+footer p{
+    font-weight: bold;
+    font-size: 20px;
+}
+footer #copyright{
+    display: block;
+    font-size: 16px;
+    margin-top:30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+@media(max-width:440px){
+    .abt,.address,.custser{
+        width: 250px;
+    }
+}
+#alertmsg{
+    position: absolute;
+    top: 0;
+    right:0;
+    background-color: rgba(26, 2, 2, 0.877);
+    z-index: 1;
+    padding: 28px 20px;
+    text-align: center;
+    min-width:200px;
+    display: none;
+    font-size: 16px;
+}
+

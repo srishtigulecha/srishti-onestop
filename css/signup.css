@@ -1,0 +1,146 @@
+#signup_form{
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+}
+#signup{
+    background-color: rgb(247, 225, 247);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    margin: auto;
+}
+#login{
+    background-color: rgb(247, 225, 247);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 490px;
+}
+.form-content{
+    box-sizing: border-box;
+   display: flex;
+   align-items:flex-start;
+   justify-content: space-around;
+   margin-top: 20px;
+   flex-wrap: wrap;
+}
+.box1{
+    width: 50%;
+}
+#signup h1,#login h1{
+    background-color: rgb(240, 202, 240);
+    padding: 20px 40px;
+    margin:0 0 20px 0;
+    border-bottom: 2px solid plum;
+}
+.form-control{
+    padding: 0 40px 20px 40px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.form-control input[type="text"],.form-control input[type="email"],.form-control input[type="password"],textarea{
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 4px;
+    display: block;
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+    outline: none;
+}
+.form-control input[type="radio"]{
+    margin:0px 20px 10px 5px;
+    font-size: 14px;
+    outline: none;
+}
+.form-control label[for="female"],.form-control label[for="male"],.form-control label[for="others"]{
+    margin-top: 3px;
+    font-size:16px;
+}
+.form-control.success input,.form-control.success textarea{
+    border-color: rgb(36, 211, 36);
+}
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color:rgb(36, 211, 36) ;
+}
+.form-control.error input,.form-control.error textarea{
+    border-color: rgb(219, 14, 14);
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: rgb(219, 14, 14);
+}
+.form-control.error small{
+    visibility: visible;
+    color: rgb(219, 14, 14);
+}
+.form-control i{
+    position: absolute;
+    visibility: hidden;
+    top:40px;
+    right: 70px;
+}
+#gender{
+    padding: 0px;
+    padding-bottom: 15px;
+}
+.form-control #gender i{
+    top:4px;
+    left: 70px;
+}
+.form-control small{
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    left: 40px;
+}
+.form-control #gender small{
+    left:0px;
+    font-size: 13px;
+}
+#signup button,#login button{
+    background-color: #5dc060;
+    color: white;
+    border: 2px solid #38993c;
+    font-size: 17px;
+    transition-duration: 0.4s;
+    width: 50%;
+    padding: 10px;
+    margin:auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+#login button{
+    width: 90%;
+}
+#signup button:hover,#login button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #5dce60;
+    color: white;   
+}
+#align{
+    text-align: center;
+    padding: auto;
+}
+@media (max-width:600px){
+    .box1{
+        width: 100%;
+        display: block;
+    }
+    #signup button{
+        width: 90%;
+    }
+}
+@media (max-width:500px){
+    #login{
+        width: 90%;
+    }
+}

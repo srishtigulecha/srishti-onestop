@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+#abt{
+    display: flex;
+    align-items:baseline;
+    justify-content:center;
+    margin:30px 20px 30px 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.img{
+    background-image: url("shop_abt.png");
+    height: 430px;
+    width: 40%;
+    min-width: 546px;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+    margin: auto;
+}
+.img p{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-size:20px;;
+}
+.abt_content{
+    width: 50%;
+    margin: auto;
+    background-color: rgb(252, 246, 237);
+    padding: 15px 25px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+}
+.abt_content p{
+    font-family: 'Padauk', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+@media (max-width:1225px){
+    .abt_content{
+        width: 40%;
+    }
+}
+@media (max-width:1050px) {
+    .abt_content{
+        width:90%;
+        margin: auto;
+    } 
+}
+@media (max-width:550px){
+    .img{
+        background-image: url("shop_abt1.png");
+        height: 320px;
+        width: 60%;
+        min-width: 310px;
+        background-repeat: no-repeat;
+        margin: auto;
+        position: relative;
+    }
+    .img p{
+        bottom: 0px;
+    }
+}

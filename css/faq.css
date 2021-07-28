@@ -1,0 +1,71 @@
+#faqhead{
+    width: 100%;
+    padding-top:5px;
+}
+#faqhead #faq{
+    font-family: cursive;
+    font-size: 20px;
+    padding: 15px;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(255, 241, 253);
+    border-bottom: 3px solid pink;
+}
+.head{
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+.b1 {
+    background-color: rgb(221, 247, 204);
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+    padding: 18px;
+    padding-left: 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    border-bottom: 1px solid rgb(2, 66, 2);
+} 
+.active,.b1:hover {
+    background-color: rgb(174, 236, 138);
+} 
+.b1:after {
+    content: '\02C5';
+    color: rgb(54, 54, 54);
+    float: right;
+    margin-left: 5px;
+}  
+.active:after {
+    content: '\02C4';
+} 
+.content {
+    padding: 0 25px;
+    background-color: rgb(231, 245, 228);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.content p{
+    font-size: 17px;
+    margin: 0;
+}
+.content p:nth-child(odd){
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+.content p:nth-child(even){
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+@media(max-width:500px){
+    .head{
+        width: 95%;
+    }
+}
+

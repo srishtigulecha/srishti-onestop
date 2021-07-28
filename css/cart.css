@@ -1,0 +1,30 @@
+.prod .remove_btn{
+    border: 2px solid #e95c5c;
+    width: 100px;
+    height: 34px;
+    font-size: 13px;
+}
+.prod .remove_btn:hover{
+    background-color: #e95c5c;
+}
+#place{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+#cart_btn{
+    height: 40px;
+    width: 250px;
+    background-color: rgb(190, 8, 130);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    
+}
+#cart_btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(202, 20, 172, 0.24);
+    border-radius: 6px;
+}
+.new{
+    font-size: 14px;
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+#headtext{
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+    background-color: rgb(187, 236, 238);
+}
+#ortxt{
+    background-color: #dbf5f8;
+    width: 80%;
+    max-width: 400px;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(14, 87, 121);
+}
+#order p{
+    font-size: 15px;
+}
+#finp{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
